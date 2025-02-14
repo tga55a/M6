@@ -13,7 +13,6 @@ while (active) {
             
             if (guess == randomNumber) {
                 window.prompt("Correct! It took you " + attempts + " attempts. Press ENTER to continue")
-                attempts += 1
                 break
             } else if (guess == 999) {
                 active = false
