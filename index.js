@@ -5,7 +5,7 @@ let active = true
 while (active) {
 
     let randomNumber = Math.floor(Math.random() * 10) + 1
-    let attempts = 0
+    let attempts = 1
 
     while (active) {
         try {
@@ -26,5 +26,5 @@ while (active) {
         }
     }
     index += 1
-    attempts = 0
+    attempts = 1
 }
