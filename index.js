@@ -5,12 +5,11 @@ let active = true
 while (active) {
 
     let randomNumber = Math.floor(Math.random() * 10) + 1
+    let attempts = 0
 
     while (active) {
         try {
             let guess = Number(prompt("Question #" + index + ". What's your guess?: "))
-            console.log(guess)
-            let attempts = 0
             
             if (guess == randomNumber) {
                 window.prompt("Correct! It took you " + attempts + " attempts. Press ENTER to continue")
@@ -23,8 +22,9 @@ while (active) {
             }
 
         } catch {
-            window.prompt("I cannot understand this input. Please enter a number.")
+            window.prompt("I cannot understand this input. Please enter a number next time. Press ENTER to try again.")
         }
     }
     index += 1
+    attempts = 0
 }
